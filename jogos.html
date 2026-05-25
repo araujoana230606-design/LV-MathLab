@@ -1,238 +1,92 @@
-<html>
-    <html lang="pt-br">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laboratório Virtual de Matemática</title>
-    <link rel="stylesheet" href="lab.css"><link rel="stylesheet" href="equipe css.css">
+    <title>Jogos - MATH LAB</title>
+
+    <link rel="stylesheet" href="lab.css">
 </head>
+
 <body>
+
     <div class="imagem">
-        <img src="3 juntas m.png" alt="Imagem Acima do Cabeçalho">
+        <img src="logo.png" alt="Logo">
     </div>
-    
+
     <header>
-      <!-- Título e Subtítulo -->
-        <div>
-     <h1>Laboratório Virtual</h1>
-     <h1>de Matemática</h1>
-            <p>LVM do CETI Baurélio Mangabeira</p>
-        </div>
-    
+        <h1>MATH LAB</h1>
+        <p>Jogos Matemáticos</p>
     </header>
+
     <nav>
-        <a href="Lab Prog.html">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="equipe html.html">Equipe</a>
         <a href="jogos.html">Jogos</a>
         <a href="praticos.html">Estudos</a>
-
-     
     </nav>
 
-<head>
-    <title>Nossa Equipe</title>
-    <body>
-        <h1>Jogos matemáticos para se divertir e melhorar seus conhecimentos e raciocínio.</h1>
+    <h1>Jogos Matemáticos</h1>
 
-        <section id="jogos">
-            <div class="membro">
-                <img src="torre de hanoi.png" alt="Foto do jogo 1">
-                <h3>Torre de Hanói</a></h3>
-                <button class="game-button" onclick="toggleGame('game1')">Jogue Aqui!</button>
-        
-                <div id="game1" class="game-container">
-                    <iframe src="https://www.geogebra.org/material/iframe/id/s5hd5qum/border/none/srgb/true"></iframe>
-                    <button class="fullscreen-btn" onclick="abrirTelaCheia('game1')">⛶ Tela Cheia</button>
-                    <button class="close-button" onclick="toggleGame('game1')">Fechar Jogo</button>
-                </div>
-                <p>Pode ser usado para abordar Função Exponencial e Progressão Geométrica.<p>
-                    <p>A Torre de Hanói é um quebra-cabeça matemático ou jogo que consiste em três pinos e um número de discos de 
-                    tamanhos diferentes, que podem ser movidos de um pino para outro. O objetivo do jogo é mover toda a pilha de 
-                    discos de um pino inicial para um pino de destino, seguindo algumas regras.</p>
-                
-            </div>
-        
-            <div class="membro">
-                <img src="batalha naval.jpg" alt="Foto do jogo 2">
-                <h3>Batalha Naval</a></h3>
-                <button class="game-button" onclick="toggleGame('game2')">Jogue Aqui!</button>
-        
-                <div id="game2" class="game-container">
-                    <iframe src="https://papergames.io/pt-br/batalha-naval"></iframe>
-                    <button class="fullscreen-btn" onclick="abrirTelaCheia('game2')">⛶ Tela Cheia</button>
-                    <button class="close-button" onclick="toggleGame('game2')">Fechar Jogo</button>
-                </div>
-                <p>Pode ser usado para trabalhar coordenadas cartesianas (plano cartesiano), probabilidade (na escolha dos tiros), 
-                    raciocínio lógico-dedutivo e estratégia.<p>
-                    </p>A Batalha Naval é um jogo de tabuleiro de dois jogadores, tradicionalmente jogado com lápis e papel 
-                    (ou com um tabuleiro físico e pinos), onde o objetivo é afundar todos os navios do oponente antes que ele afunde os seus.
-                </p>
+    <section id="jogos">
+
+        <div class="membro">
+            <img src="xadrez.png">
+            <h3>Xadrez</h3>
+
+            <button class="game-button" onclick="toggleGame('game1')">
+                Jogar
+            </button>
+
+            <div id="game1" class="game-container">
+                <iframe src="https://www.chess.com/pt-BR"></iframe>
+                <button class="close-button" onclick="toggleGame('game1')">
+                    Fechar
+                </button>
             </div>
 
+            <p>Ajuda no raciocínio lógico e estratégia.</p>
+        </div>
 
-            <div class="membro">
-                <img src="sudoku.jpeg" alt="Foto do membro 2">
-                <h3>Sudoku</a></h3>
-                    <button class="game-button" onclick="toggleGame('game3')">Jogue Aqui!</button>
-        
-                    <div id="game3" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.sudokuonline.io/pt/" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://www.sudokuonline.io/pt/"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game3')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game3')">Fechar Jogo</button>
-                    </div>  
-                
-                <p>Pode Ser usado para trabalhar raciocínio lógico-matemático.</p>
-                <p>É um famoso desafio de lógica em que a pessoa jogadora deve distribuir números,
-                    letras ou figuras nos espaços em branco no tabuleiro. A finalidade do jogo é preencher as células vazias, 
-                    com um número em cada célula, de forma que cada coluna, linha e região contenham os números 1-9 
-                    apenas uma vez.</p>
+        <div class="membro">
+            <img src="sudoku.jpeg">
+            <h3>Sudoku</h3>
+
+            <button class="game-button" onclick="toggleGame('game2')">
+                Jogar
+            </button>
+
+            <div id="game2" class="game-container">
+                <iframe src="https://www.sudokuonline.io/pt/"></iframe>
+
+                <button class="close-button" onclick="toggleGame('game2')">
+                    Fechar
+                </button>
             </div>
 
-            <div class="membro">
-                <img src="tangram.jpg" alt="Foto do membro 2">
-                <h3>Tangram</a></h3>
-                    <button class="game-button" onclick="toggleGame('game4')">Jogue Aqui!</button>
-        
-                    <div id="game4" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="http://www.tangramonline.com/" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="http://www.tangramonline.com/"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game4')">⛶ Tela Cheia</button>.
-                        <button class="close-button" onclick="toggleGame('game4')">Fechar Jogo</button>
-                    </div>  
-           <p>Pode Ser usado para trabalhar raciocínio lógico-matemático, geometria plana, transformações geométricas, simetria, área e perímetro.</p>
-                <p>O Tangram é um quebra-cabeça geométrico chinês composto por sete peças planas, chamadas "tans", 
-                    que são obtidas a partir da dissecação de um quadrado. As sete peças são: dois triângulos grandes, 
-                    um triângulo médio, dois triângulos pequenos, um quadrado e um paralelogramo.
-                    O objetivo do Tangram é formar uma variedade de figuras (como pessoas, animais, letras, objetos e formas geométricas)
-                     utilizando todas as sete peças, sem sobrepô-las. A beleza do Tangram reside na sua aparente simplicidade, mas na 
-                     infinidade de possibilidades de criação.</p>
-           </div>
-           
-           
-            <div class="membro">
-                <img src="domino.png" alt="Foto do membro 2">
-                <h3>Dominó</a></h3>
-                    <button class="game-button" onclick="toggleGame('game5')">Jogue Aqui!</button>
-        
-                    <div id="game5" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://rachacuca.com.br/passatempos/domino/" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://rachacuca.com.br/passatempos/domino/"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game5')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game5')">Fechar Jogo</button>
-                    </div>  
-                <p> Pode ser usado para trabalhar contagem, adição, subtração, padrões e sequencias, além da probabilidade e raciocínio lógico. </p>
-                    <p>O dominó é um jogo de tabuleiro clássico jogado com um conjunto de peças retangulares (também chamadas de dominós), 
-                    cada uma dividida em duas faces quadradas. Cada face contém um número de pontos (ou "pips") que variam de zero a um 
-                    valor máximo (geralmente 6 ou 9, dependendo do conjunto). O objetivo principal do jogo é ser o primeiro a se livrar 
-                    de todas as suas peças, ou em algumas variantes, fazer a maior pontuação.Descrição: O domínio de uma equação é o conjunto 
-                    de valores de entrada que podem ser usados sem gerar indeterminações.</p>
-            </div> 
+            <p>Desenvolve concentração e lógica.</p>
+        </div>
 
+    </section>
 
-            <div class="membro">
-                <img src="dama.png" alt="Foto do membro 2">
-                <h3>Dama</a></h3>
-                    <button class="game-button" onclick="toggleGame('game6')">Jogue Aqui!</button>
-        
-                    <div id="game6" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://poki.com/br/dama" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://poki.com/br/dama"></iframe
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game6')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game6')">Fechar Jogo</button>
-                     </div>  
-                 <p> Pode ajudar a aprender matemática por meio de conceitos como contagem, estratégia e analogia ao sistema de coordenadas 
-                    cartesianas.</p>
-                <p>O jogo de damas é jogado em um tabuleiro de 64 casas, com 32 claras e 32 escuras. 
-                    O objetivo é capturar todas as peças do adversário ou impedir que ele mova as suas.</p>
-            </div> 
+    <script>
+        function toggleGame(id) {
+            let game = document.getElementById(id);
 
-            <div class="membro">
-                <img src="quadro_magico.png" alt="Foto do membro 2">
-                <h3>Quadro Mágico</a></h3>
-                    <button class="game-button" onclick="toggleGame('game7')">Jogue Aqui!</button>
-        
-                    <div id="game7" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.geogebra.org/m/zcyb9y3d" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://www.geogebra.org/m/zcyb9y3d"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game7')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game7')">Fechar Jogo</button>
-                    </div> 
-<p> Pode ser usado para trabalhar a lógica e adição.</p>
-                <p>O objetivo do jogo é dispor os números no quadro de forma que a soma dos números nas linhas, nas colunas e nas diagonais sejam iguais.</p>
-             </div>  
+            game.style.display =
+                game.style.display === "block"
+                ? "none"
+                : "block";
+        }
+    </script>
 
-            <div class="membro">
-                <img src="uno.jpg" alt="Foto do membro 2">
-                <h3>Uno</a></h3>
-                    <button class="game-button" onclick="toggleGame('game8')">Jogue Aqui!</button>
-        
-                    <div id="game8" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://jogoseducativos.hvirtua.com/uno-hvirtua/" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://jogoseducativos.hvirtua.com/uno-hvirtua/"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game8')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game8')">Fechar Jogo</button>
-            </div> 
-<p>   Pode ser usado para trabalhar contagem, probabilidade e raciocínio lógico e estratégico.</p>
-                <p>O objetivo principal é ser o primeiro jogador a se livrar de todas as suas cartas em cada rodada.
-                    O baralho do UNO é composto por cartas de quatro cores (vermelho, amarelo, verde e azul), com números de 0 a 9, 
-                    além de várias cartas de ação especiais..</p>
-                 </div> 
+    <footer>
+        <p>© 2026 MATH LAB</p>
+    </footer>
 
-            <div class="membro">
-                <img src="xadrez.png" alt="Foto do membro 2">
-                <h3>Xadrez</a></h3>
-                    <button class="game-button" onclick="toggleGame('game9')">Jogue Aqui!</button>
-        
-                    <div id="game9" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.chess.com/pt-BR" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://www.chess.com/pt-BR"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game9')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game9')">Fechar Jogo</button>
-            </div> 
-                <p> Pode ser usado para trabalhar a aritmética, álgebra e geometria, além do raciocínio lógico e estratégico.</p>
-                <p>O xadrez é um jogo de tabuleiro de estratégia para dois jogadores, que simula uma batalha entre dois exércitos em um campo 
-                    de batalha. O jogo é disputado em um tabuleiro quadrado, dividido em 64 casas alternadamente claras e escuras (8x8). Cada 
-                    jogador começa com 16 peças: um rei, uma rainha, duas torres, dois bispos, dois cavalos e oito peões. O objetivo do xadrez 
-                    é dar xeque-mate no rei adversário. Isso significa colocar o rei do oponente em uma posição 
-                    em que ele está sob ataque (em "xeque") e não há nenhum movimento legal que ele possa fazer para escapar desse ataque.</p>
-            </div> 
-
-<div class="membro">
-                <img src="abaco imagem.webp" alt="Foto do membro 2">
-                <h3>Ábaco</a></h3>
-                    <button class="game-button" onclick="toggleGame('game10')">Jogue Aqui!</button>
-        
-                    <div id="game10" class="game-container">
-                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.nossoclubinho.com.br/abaco-virtual-2-0/" target="_blank">Clique aqui</a> se não carregar.</p>
-                        <iframe src="https://www.nossoclubinho.com.br/abaco-virtual-2-0/"></iframe>
-                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game10')">⛶ Tela Cheia</button>
-                        <button class="close-button" onclick="toggleGame('game10')">Fechar Jogo</button>
-            </div> 
-                <p> Pode ser usado para calculos matematicos.</p>
-                <p>É um instrumento de cálculo antigo que pode ser usado para realizar operações matemáticas como adição, subtração, 
-                    multiplicação e divisão.</p>
-            </div> 
-            
-        </section>
-        <script>
-            function toggleGame(id) {
-                let game = document.getElementById(id);
-                game.style.display = game.style.display === "none" || game.style.display === "" ? "block" : "none";
-            }
-        
-            function abrirTelaCheia(id) {
-                let iframe = document.querySelector(`#${id} iframe`);
-                if (iframe.requestFullscreen) iframe.requestFullscreen();
-                else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
-                else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
-                else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
-            }
-        </script>
-            </div>
-        </section>
-        <footer>
+</body>
+</html>
             <p>&copy; 2024 Laboratório Virtual de Matemática do CETI Baurléio Mangabeira. Todos os direitos reservados.</p>
         </footer>
     </body>

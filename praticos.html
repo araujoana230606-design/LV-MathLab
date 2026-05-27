@@ -2,92 +2,499 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Estudos - MATH LAB</title>
+    <title>MATH LAB - Estudos</title>
 
     <link rel="stylesheet" href="lab.css">
+
 </head>
 
 <body>
 
+    <!-- LOGO -->
     <div class="imagem">
-        <img src="logo.png" alt="Logo">
+
+        <img src="logo.png" alt="Logo MATH LAB">
+
     </div>
 
+    <!-- CABEÇALHO -->
     <header>
+
         <h1>MATH LAB</h1>
-        <p>Atividades Práticas</p>
+
+        <p>Plataforma Virtual de Matemática</p>
+
     </header>
 
+    <!-- MENU -->
     <nav>
+
         <a href="index.html">Inicio</a>
+
         <a href="equipe html.html">Equipe</a>
+
         <a href="jogos.html">Jogos</a>
+
         <a href="praticos.html">Estudos</a>
+
     </nav>
 
-    <h1>Atividades para Estudos</h1>
+    <!-- TÍTULO -->
+    <section class="pagina-topo">
 
+        <h2>Atividades Práticas</h2>
+
+        <p>
+            Explore ferramentas interativas para aprender matemática
+            de forma dinâmica, visual e divertida.
+        </p>
+
+    </section>
+
+    <!-- CONTEÚDO -->
     <section id="praticos">
 
+        <!-- CARD 1 -->
         <div class="membro">
-            <img src="geoplano.jpg">
 
-            <h3>Geoplano</h3>
+            <img src="sierpinski.png"
+                alt="Triângulo de Sierpinski">
 
-            <button class="game-button" onclick="toggleGame('p1')">
-                Abrir
+            <h3>Triângulo de Sierpinski</h3>
+
+            <button class="game-button"
+                onclick="toggleGame('pratico1')">
+
+                Ver Atividade
+
             </button>
 
-            <div id="p1" class="game-container">
-                <iframe src="https://apps.mathlearningcenter.org/geoboard/"></iframe>
+            <div id="pratico1"
+                class="game-container">
 
-                <button class="close-button" onclick="toggleGame('p1')">
-                    Fechar
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://pt.mathigon.org/course/fractals/sierpinski"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://pt.mathigon.org/course/fractals/sierpinski">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico1')">
+
+                    ⛶
+
                 </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico1')">
+
+                    Fechar
+
+                </button>
+
             </div>
 
-            <p>Ferramenta para geometria e áreas.</p>
+            <p>
+
+                Explore padrões geométricos,
+                frações, área e lógica matemática
+                através dos famosos fractais.
+
+            </p>
+
         </div>
 
+        <!-- CARD 2 -->
         <div class="membro">
-            <img src="pitagoras.png">
+
+            <img src="geoplano.jpg"
+                alt="Geoplano">
+
+            <h3>Geoplano Virtual</h3>
+
+            <button class="game-button"
+                onclick="toggleGame('pratico2')">
+
+                Ver Atividade
+
+            </button>
+
+            <div id="pratico2"
+                class="game-container">
+
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://apps.mathlearningcenter.org/geoboard/"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://apps.mathlearningcenter.org/geoboard/">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico2')">
+
+                    ⛶
+
+                </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico2')">
+
+                    Fechar
+
+                </button>
+
+            </div>
+
+            <p>
+
+                Ferramenta ideal para estudar
+                geometria plana, área, perímetro,
+                coordenadas e simetria.
+
+            </p>
+
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="membro">
+
+            <img src="pitagoras.png"
+                alt="Pitágoras">
 
             <h3>Teorema de Pitágoras</h3>
 
-            <button class="game-button" onclick="toggleGame('p2')">
-                Abrir
+            <button class="game-button"
+                onclick="toggleGame('pratico3')">
+
+                Ver Atividade
+
             </button>
 
-            <div id="p2" class="game-container">
-                <iframe src="https://www.matematica.pt/util/calculadora-teorema-pitagoras.php"></iframe>
+            <div id="pratico3"
+                class="game-container">
 
-                <button class="close-button" onclick="toggleGame('p2')">
-                    Fechar
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://www.matematica.pt/util/calculadora-teorema-pitagoras.php"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://www.matematica.pt/util/calculadora-teorema-pitagoras.php">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico3')">
+
+                    ⛶
+
                 </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico3')">
+
+                    Fechar
+
+                </button>
+
             </div>
 
-            <p>Ajuda no estudo de triângulos retângulos.</p>
+            <p>
+
+                Aprenda relações métricas
+                e cálculos em triângulos
+                retângulos de forma visual.
+
+            </p>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="membro">
+
+            <img src="função afim.png"
+                alt="Função Afim">
+
+            <h3>Função Afim</h3>
+
+            <button class="game-button"
+                onclick="toggleGame('pratico4')">
+
+                Ver Atividade
+
+            </button>
+
+            <div id="pratico4"
+                class="game-container">
+
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://www.geogebra.org/m/ubhmrqjw"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://www.geogebra.org/m/ubhmrqjw">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico4')">
+
+                    ⛶
+
+                </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico4')">
+
+                    Fechar
+
+                </button>
+
+            </div>
+
+            <p>
+
+                Visualize gráficos, coeficientes
+                e comportamento das funções
+                do 1º grau.
+
+            </p>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="membro">
+
+            <img src="Circulo trigonometri.png"
+                alt="Círculo Trigonométrico">
+
+            <h3>Círculo Trigonométrico</h3>
+
+            <button class="game-button"
+                onclick="toggleGame('pratico5')">
+
+                Ver Atividade
+
+            </button>
+
+            <div id="pratico5"
+                class="game-container">
+
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://www.geogebra.org/m/e4xeacvg"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://www.geogebra.org/m/e4xeacvg">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico5')">
+
+                    ⛶
+
+                </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico5')">
+
+                    Fechar
+
+                </button>
+
+            </div>
+
+            <p>
+
+                Aprenda seno, cosseno,
+                tangente e ângulos
+                de forma interativa.
+
+            </p>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="membro">
+
+            <img src="frações.png"
+                alt="Frações">
+
+            <h3>Calculando Frações</h3>
+
+            <button class="game-button"
+                onclick="toggleGame('pratico6')">
+
+                Ver Atividade
+
+            </button>
+
+            <div id="pratico6"
+                class="game-container">
+
+                <p>
+
+                    Caso não carregue,
+
+                    <a href="https://pt.symbolab.com/solver/fractions-calculator"
+                        target="_blank">
+
+                        clique aqui
+
+                    </a>
+
+                </p>
+
+                <iframe
+                    src="https://pt.symbolab.com/solver/fractions-calculator">
+                </iframe>
+
+                <button class="fullscreen-btn"
+                    onclick="abrirTelaCheia('pratico6')">
+
+                    ⛶
+
+                </button>
+
+                <button class="close-button"
+                    onclick="toggleGame('pratico6')">
+
+                    Fechar
+
+                </button>
+
+            </div>
+
+            <p>
+
+                Resolva operações com frações
+                e pratique simplificação,
+                divisão e multiplicação.
+
+            </p>
+
         </div>
 
     </section>
 
-    <script>
-        function toggleGame(id) {
-            let game = document.getElementById(id);
-
-            game.style.display =
-                game.style.display === "block"
-                ? "none"
-                : "block";
-        }
-    </script>
-
+    <!-- RODAPÉ -->
     <footer>
-        <p>© 2026 MATH LAB</p>
+
+        <p>
+
+            © 2026 MATH LAB - Plataforma Virtual de Matemática
+
+        </p>
+
     </footer>
 
+    <!-- SCRIPT -->
+    <script>
+
+        function toggleGame(id) {
+
+            let game =
+                document.getElementById(id);
+
+            if (
+                game.style.display === "block"
+            ) {
+
+                game.style.display = "none";
+
+            }
+
+            else {
+
+                game.style.display = "block";
+
+            }
+
+        }
+
+        function abrirTelaCheia(id) {
+
+            let iframe =
+                document.querySelector(
+                    `#${id} iframe`
+                );
+
+            if (iframe.requestFullscreen) {
+
+                iframe.requestFullscreen();
+
+            }
+
+            else if (
+                iframe.webkitRequestFullscreen
+            ) {
+
+                iframe.webkitRequestFullscreen();
+
+            }
+
+            else if (
+                iframe.msRequestFullscreen
+            ) {
+
+                iframe.msRequestFullscreen();
+
+            }
+
+        }
+
+    </script>
+
 </body>
+
 </html>
